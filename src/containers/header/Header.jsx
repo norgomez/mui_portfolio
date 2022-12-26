@@ -9,14 +9,14 @@ const Header = () => {
     <div>
       <Container maxWidth='sm' sx={{mt: 5}}>
         <Typography variant='h3' align='center' color='textPrimary' gutterBottom> 
-            Hello World !
+            Dev Blog
         </Typography>
       </Container>
 
       <Grid container>
         <Grid item xs={6} md={6} lg={6} xl={6}>
-          <Typography>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur iste facere ipsam quis modi fugiat consectetur rerum minus, blanditiis dolorum adipisci nisi vero quas incidunt quia quos beatae sit sed!
+          <Typography align='center'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate soluta impedit veniam asperiores laudantium maiores voluptatibus! Repellat tempore accusamus nesciunt tenetur, ratione voluptatum assumenda libero aliquid quod repellendus nulla temporibus.
           </Typography>
         </Grid>
       </Grid>
