@@ -1,23 +1,25 @@
 import React from 'react';
-import { Footer, Blog, Features, Header  } from './containers';
-import { Brand, Navbar, CardLinks } from './components';
-import { BrowserRouter  } from 'react-router-dom';
+import { Brand, Navbar, CardLinks, Footer, Header } from './components';
+import { BrowserRouter, Route  } from 'react-router-dom';
+import  Home  from './pages/Home';
 import './App.css';
 
 const App = () => {
   return (
     <div className='App'>
       <BrowserRouter>
-          <div>
-            <Navbar />
-            <Header />
-            <CardLinks />
-          </div>
-          
-          <Brand />
-          <Features />
-          <Blog />
-          <Footer />
+        
+          <Navbar>
+            <Route path="/home" element={<Home />} />
+          </Navbar>
+        
+        <Header />
+        <CardLinks />
+        
+
+        
+        <Brand />
+        <Footer />
       </BrowserRouter>
     </div>
   )

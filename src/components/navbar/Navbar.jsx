@@ -1,5 +1,7 @@
 import { AppBar, Container, Toolbar, Box, IconButton, Typography, Button } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
+
 import React from 'react';
 
 
@@ -10,18 +12,27 @@ const Navbar = () => {
         <AppBar position='static'>
           <Container>
             <Toolbar>
+
               <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                 <MenuIcon />
               </IconButton>
+
               <Typography variant='h6' component='div' sx={{flexGrow: 1}}>
                 Norberto Gomez
               </Typography>
-              <Button color='inherit'>
-                Login
-              </Button>
-              <Button color='inherit'>
-                Logout 
-              </Button>
+
+              <Link to='/home'>
+                <Button color='inherit'>
+                  Home
+                </Button>
+              </Link>
+
+              
+                <Button component={Link} to='/logout' color='inherit'>
+                  Logout 
+                </Button>
+             
+
             </Toolbar>
           </Container>
         </AppBar>

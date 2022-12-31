@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { Container, Grid, Card, CardActionArea, CardContent, CardMedia, Typography, Divider } from '@mui/material';
 import github from './github-logo.jpg'
 import College from './College.jpg'
 
@@ -7,7 +7,13 @@ import College from './College.jpg'
 const FeatureCards = () => {
   return (
     <>
+
+  <Divider > Cards </Divider>
       <Container>
+
+        
+
+
         <Grid container sx={{m: 3}}>
 
 
